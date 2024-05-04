@@ -27,3 +27,22 @@ for (let i = index; i < arr.length; i++) {
 arr.length = arr.length - 1;
 
 console.log(arr);
+
+// prime number
+
+ let n = parseInt(prompt("Enter the number = "));
+        let count = 0;
+
+
+        for (let i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+            }
+        }
+
+        if (count == 2) {
+            console.log(`${n} is a prime`);
+        }
+        else {
+            console.log(`${n} is not prime\n`);
+        }
